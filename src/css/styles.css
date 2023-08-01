@@ -1,0 +1,331 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  list-style: none;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #212121;
+  color: #8d04ac;
+}
+body a {
+  transition: 0.4s;
+}
+
+.header {
+  background-color: #212121;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .header {
+    flex-direction: column;
+    gap: 50px;
+  }
+}
+.header-brand {
+  font-family: "Space Grotesk", sans-serif;
+  font-size: 24px;
+  color: #8d04ac;
+  transition: 0.8s;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+.header-brand:hover {
+  border-bottom: 1px solid #fff;
+}
+.header-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 1024px) {
+  .header-navbar {
+    flex-direction: column;
+    gap: 40px;
+    margin-top: -20px;
+  }
+}
+.header-navbar li {
+  margin-left: 10px;
+}
+.header-navbar a {
+  transition: 0.8s;
+  padding: 1rem;
+}
+.header-navbar a:hover {
+  background-color: #fff;
+  color: #000;
+}
+.header-social-media {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.header-social-media li {
+  margin-left: 20px;
+}
+.header-social-media a {
+  color: #8d04ac;
+}
+.header-social-media a:hover {
+  color: #fff;
+}
+
+.main .about-me {
+  margin-top: 1rem;
+  text-align: center;
+}
+.main .about-me h2 {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 5px;
+  margin-left: 10px;
+  display: inline;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.6s;
+}
+.main .about-me h2:hover {
+  border-bottom: 1px solid #fff;
+}
+.main .about-me-divisao {
+  max-width: 1400px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  height: 85vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+  text-align: center;
+}
+@media (max-width: 1024px) {
+  .main .about-me-divisao {
+    grid-template-columns: 1fr;
+    height: 90vh;
+  }
+}
+.main .about-me-divisao-img img {
+  width: 65%;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+  border: 4px solid #fff;
+  border-radius: 200px;
+}
+@media (max-width: 1024px) {
+  .main .about-me-divisao-img img {
+    width: 50%;
+  }
+}
+.main .about-me-divisao-img img:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
+.main .about-me-divisao-text {
+  color: #fff;
+  padding: 20px;
+  margin-right: 10px;
+  border: 2px solid #8d04ac;
+  font-size: 25px;
+  transform: perspective(800px) rotateY(25deg);
+  transition: 0.5s;
+}
+@media (max-width: 1024px) {
+  .main .about-me-divisao-text {
+    transform: rotateY(0deg);
+    font-size: 100%;
+  }
+}
+.main .about-me-divisao-text:hover {
+  transform: perspective(800px) rotateY(0deg);
+}
+.main .about-me-divisao-text p {
+  opacity: 0;
+  font-weight: 700;
+  animation: textoAparece 0s 1.1s both;
+  text-align: justify;
+}
+.main .skills {
+  text-align: center;
+  height: 100vh;
+}
+.main .skills h2 {
+  padding: 10px;
+  text-transform: uppercase;
+  display: inline;
+  transition: 0.6s;
+}
+.main .skills h2:hover {
+  border-bottom: 1px solid #fff;
+  border-top: 1px solid #fff;
+}
+.main .skills .images-slider {
+  display: grid;
+  place-items: center;
+  margin-top: 20px;
+}
+.main .skills .images-slider .slide {
+  width: 60%;
+}
+.main .skills .images-slider .slide .content {
+  background-color: #07182E;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 20px;
+}
+.main .skills .images-slider .slide .content h3 {
+  font-family: "Space Grotesk", sans-serif;
+  text-transform: uppercase;
+  color: #61DBFB;
+  font-size: 40px;
+  padding: 20px;
+}
+.main .skills .images-slider .slide .content p {
+  font-family: "Space Grotesk", sans-serif;
+  color: #fff;
+  margin-top: 20px;
+  padding: 20px;
+  font-size: 22px;
+}
+.main .skills .images-slider .slide .content img {
+  width: 50%;
+}
+.main .projects {
+  margin-top: 40px;
+  text-align: center;
+}
+.main .projects h2 {
+  font-family: "Space Grotesk", sans-serif;
+  padding: 10px;
+  margin-left: 10px;
+  display: inline;
+  text-transform: uppercase;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.6s;
+}
+.main .projects h2:hover {
+  border-top: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+.main .projects-cards {
+  max-width: 1400px;
+  padding: 1.5rem 0;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+@media (max-width: 1024px) {
+  .main .projects-cards {
+    flex-direction: column;
+  }
+}
+.main .projects-cards-item {
+  width: 45%;
+  height: 400px;
+  margin-bottom: 4%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+@media (max-width: 1024px) {
+  .main .projects-cards-item {
+    width: 65%;
+    height: 200px;
+  }
+}
+.main .projects-cards-item .title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  font-family: "Space Grotesk", sans-serif;
+  background-color: #000;
+  padding: 10px;
+}
+.main .projects-cards-item .link {
+  display: inline;
+  transition: 0.8s;
+  padding: 5px;
+  text-transform: uppercase;
+  background-color: #fff;
+}
+.main .projects-cards #project-1 {
+  background-image: url("../imgs/game.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.main .projects-cards #project-1:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../imgs/game.png");
+}
+.main .projects-cards #project-2 {
+  background-image: url("../imgs/calculator.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.main .projects-cards #project-2:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../imgs/calculator.png");
+}
+.main .projects-cards #project-3 {
+  background-image: url("../imgs/spotify.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+  border-radius: 10px;
+  background-position: top;
+}
+.main .projects-cards #project-3:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../imgs/spotify.png");
+}
+.main .projects-cards #project-4 {
+  background-image: url("../imgs/api.png");
+  background-size: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.6s;
+  border-radius: 10px;
+}
+.main .projects-cards #project-4:hover {
+  background-size: 110%;
+  filter: grayscale(0%);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url("../imgs/api.png");
+}
+.main .contact {
+  height: 50vh;
+  text-align: center;
+}
+.main .contact h2 {
+  text-transform: uppercase;
+  margin-right: 20px;
+  display: inline;
+  border: 1px solid rgba(255, 255, 255, 0);
+  transition: 0.6s;
+}
+.main .contact h2:hover {
+  border-left: 1px solid #fff;
+  border-bottom: 1px solid #fff;
+}
+
+/*# sourceMappingURL=styles.css.map */
