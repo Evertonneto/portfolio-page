@@ -11,16 +11,22 @@
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <!--Stylo css-->
+    <!-- BOOTSTRAP 5 -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!--StylE css-->
     <link rel="stylesheet" href="./src/css/scrollbarStyle.css">
 
     <link rel="stylesheet" href="./src/css/styles.css">
 
     <link rel="stylesheet" href="./src/css/text-animation.css">
-
+    
     <!--FAVICON -->
 
     <link rel="shortcut icon" href="./src/imgs/code-solid.svg" type="image/x-icon">
+
+    
 
     
 </head>
@@ -30,7 +36,7 @@
         
 
         <div>
-            <ul class="header-navbar">
+            <ul class="header-navbar text-decoration-none">
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#skills">My Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
@@ -39,7 +45,7 @@
         </div>
 
         <div >
-            <ul class="header-social-media">
+            <ul class="header-social-media ">
                <li><a href="https://www.linkedin.com/in/everton-nunes-36a9a021a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></i></li>
 
                <li><a href="https://github.com/Evertonneto" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
@@ -59,7 +65,7 @@
 
                 <div class="about-me-divisao-text">
                     <div class="texto-bloco">
-                        <p>My name is Everton Nunes, I study Computer Science at UNIPÊ     (University Center of João Pessoa-Brazil), during the course I found myself in the front-end area and I've been trying to improve my skills in web development, through experience in personal projects and courses. I always aim to do all the work with excellence and I'm always open to learn new subjects within the area.</p>
+                        <p class="fs-6">I am a professional dedicated to delivering projects and work with excellence. In the work environment, I constantly seek to be a valuable resource, focusing my efforts primarily in the area of web development. I am willing to take on diverse responsibilities, even if they are not directly linked to my specialty. My main goal is to improve my technical skills, both through personal and professional experiences, in order to reach the position of Full-stack developer.</p>
                     </div>
                     
                 </div>
@@ -70,36 +76,51 @@
 
         <section class="skills">
             <h2 id="skills">My Skills</h2>
-            <div class="images-slider">
-                <a href=""><img src="./src/imgs/seta-direita.png" width="20px" alt=""></a>
-                
-                <div class="slide slide-react">
-                    <div class="content">
-                        <h3>React</h3>
-                        <img src="./src/imgs/react.png" alt="" width="500px">
-                        <p>React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.</p>
+            <div class="carousel slide m-5" id="carousel-main">
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active ">
+                        <div class="content text-bg-light row justify-content-center text-center">
+                            <h3 class="p-3 col-12 ">React</h3>
+                            <img src="./src/imgs/react.png" class="img-fluid col-12 ">
+                            <p class="p-3 col-12">React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.</p>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="content text-bg-light">
+                            <h3 class="p-3">JavaScript</h3>
+                            <img src="./src/imgs/js.png" class="img-fluid w-25">
+                            <p class="p-3">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions.</p>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="content text-bg-light">
+                            <h3 class="p-3">Bootstrap</h3>
+                            <img src="./src/imgs/bootstrap.png" class="img-fluid w-25">
+                            <p class="p-3">Bootstrap is a popular front-end framework for web development, maintained by Twitter. It offers pre-styled components, a responsive grid, and JavaScript plugins to create modern and responsive interfaces with ease.</p>
+                        </div>
+                    </div>
+    
+                    <div class="carousel-item">
+                        <div class="content text-bg-light ">
+                            <h3 class="p-3">SASS</h3>
+                            <img src="./src/imgs/sass.png" class="img-fluid w-25">
+                            <p class="p-3">SASS is a CSS extension language, and the acronym stands for "Syntactically Awesome Style Sheets," literally translated as style sheets with an incredible syntax. Its concept is to add special features like variables, mixins, functions, operations, and other diverse options.</p>
+                        </div>
                     </div>
                 </div>
 
-                <div class="slide slide-js">
-                    <div class="content">
-
-                    </div>
-                </div>
-
-                <div class="slide slide-sass">
-                    <div class="content">
-
-                    </div>
-                </div>
-
-                <div class="slide slide-bootstrap">
-                    <div class="content">
-
-                    </div>
-                </div>
-
-                <a href=""><img src="./src/imgs/seta-direita.png" width="20px" alt=""></a>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev"  >
+                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next"  >
+                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+               
 
             </div>
         </section>
@@ -139,5 +160,10 @@
 
     </main>
     <footer><span>Everton Nunes Ramalho Neto</span> &copy</footer>
+
+
+    <!-- SCRIPT BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+
 </body>
 </html>

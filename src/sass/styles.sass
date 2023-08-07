@@ -19,6 +19,9 @@ body
     a
         transition: .4s
 
+a
+    text-decoration: none
+
 .header
     background-color: #212121
     padding: 20px
@@ -47,12 +50,17 @@ body
             gap: 40px
             margin-top: -20px
 
+        padding: 0px
+
         li
-            margin-left: 10px
+            margin-left: 0px
+            @include mixins.tablet
+                margin-left: 0px
 
         a
             transition: .8s
             padding: 1rem
+            color: variables.$text-color-secondary
 
             &:hover
                 background-color: #fff
@@ -104,7 +112,7 @@ body
                 transition: 0.5s
                 @include mixins.tablet
                     width: 50%
-                border: 4px solid #fff 
+                border: 4px solid #fff
                 border-radius: 200px
 
                 &:hover
@@ -133,8 +141,6 @@ body
                     animation: textoAparece 0s 1.1s both
                     text-align: justify
     .skills
-        text-align: center
-        height: 100vh
 
         h2
             padding: 10px
@@ -146,49 +152,19 @@ body
                 border-bottom: 1px solid #fff
                 border-top: 1px solid #fff
 
-        .images-slider
-            display: grid
-            place-items: center
-            margin-top: 20px
-            
+        .content
+            height: 600px
+            @include mixins.tablet
+                height: 400px
 
-            .slide
-                width: 60%
-                
-                .content
-                    background-color: #07182E
-                    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset 
-                    border-radius:20px 
+            img
+                width: 30%
 
-                    h3
-                        font-family: 'Space Grotesk', sans-serif
-                        text-transform: uppercase
-                        color: #61DBFB
-                        font-size: 40px  
-                        padding: 20px 
-
-                    p 
-                        font-family: 'Space Grotesk', sans-serif
-                        color: #fff
-                        margin-top: 20px 
-                        padding: 20px
-                        font-size: 22px
-
-                    img
-                        width: 50% 
-                        
-                        
-
-
-
-
-
-
+                @include mixins.mobile
+                    width: 100%
     .projects
-        
-        margin-top: 40px
+
         text-align: center
-        
 
         h2
             font-family: 'Space Grotesk', sans-serif
