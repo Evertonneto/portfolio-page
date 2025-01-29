@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,33 +8,40 @@
     <title>My Portfolio</title>
 
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+    <link
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
     <!-- BOOTSTRAP 5 -->
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
     <!--StylE css-->
     <link rel="stylesheet" href="./src/css/scrollbarStyle.css">
-    
+
     <link rel="stylesheet" href="./src/css/styles.css">
-    
+
     <link rel="stylesheet" href="./src/css/text-animation.css">
-    
+
     <!--FAVICON -->
 
     <link rel="shortcut icon" href="./src/imgs/code-solid.svg" type="image/x-icon">
 
-    
 
-    
+
+
+
 </head>
+
 <body>
-    <header class="header"> 
-        <a href="" class="header-brand">Everton Nunes  <i class="fa-brands fa-dev"></i>  </a>
-        
+    <header class="header sticky-md-top border-bottom">
+        <a href="" class="header-brand">Everton Nunes <i class="fa-brands fa-dev"></i> </a>
+
 
         <div>
             <ul class="header-navbar text-decoration-none">
@@ -44,16 +52,21 @@
             </ul>
         </div>
 
-        <div >
+        <div>
             <ul class="header-social-media ">
-               <li><a href="https://www.linkedin.com/in/everton-nunes-36a9a021a/" target="_blank"><i class="fa-brands fa-linkedin"></i></a></i></li>
+                <li><a href="https://www.linkedin.com/in/everton-nunes-36a9a021a/" target="_blank"><i
+                            class="fa-brands fa-linkedin"></i></a></i></li>
 
-               <li><a href="https://github.com/Evertonneto" target="_blank"><i class="fa-brands fa-square-github"></i></a></li>
+                <li><a href="https://github.com/Evertonneto" target="_blank"><i
+                            class="fa-brands fa-square-github"></i></a></li>
 
-               <li><a href="mailto:evertonrneto@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a></li>
+                <li><a href="mailto:evertonrneto@hotmail.com" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </li>
             </ul>
         </div>
+
     </header>
+
     <main class="main">
         <section class="about-me">
             <h2 id="about-me">About Me</h2>
@@ -61,66 +74,101 @@
                 <div class="about-me-divisao-img">
                     <img src="./src/imgs/myphoto.png" alt="myphoto">
                 </div>
-                
+
 
                 <div class="about-me-divisao-text">
                     <div class="texto-bloco">
-                        <p class="fs-6">I am a professional dedicated to delivering projects and work with excellence. In the work environment, I constantly seek to be a valuable resource, focusing my efforts primarily in the area of web development. I am willing to take on diverse responsibilities, even if they are not directly linked to my specialty. My main goal is to improve my technical skills, both through personal and professional experiences, in order to reach the position of Full-stack developer.</p>
+                        <p>I am a professional dedicated to delivering projects and work with excellence.
+                            In the work environment, I constantly seek to be a valuable resource, focusing my efforts
+                            primarily in the area of web development. I am willing to take on diverse responsibilities,
+                            even if they are not directly linked to my specialty. My main goal is to improve my
+                            technical skills, both through personal and professional experiences, in order to reach the
+                            position of Full-stack developer.</p>
                     </div>
-                    
+
                 </div>
 
             </div>
-            
+
         </section>
 
-        <section class="skills">
+        <section class="skills container">
             <h2 id="skills">My Skills</h2>
             <div class="carousel slide m-5" id="carousel-main">
-                <div class="carousel-inner">
+                <div class="carousel-inner text-bg rounded-4">
 
                     <div class="carousel-item active ">
-                        <div class="content text-bg-light row justify-content-center text-center">
-                            <h3 class="p-3 col-12 ">React</h3>
-                            <img src="./src/imgs/react.png" class="img-fluid col-12 w-25">
-                            <p class="p-3 col-12">React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library for building user interfaces based on components.</p>
+                        <div class="content row justify-content-center text-center">
+                            <h3 class="p-3 ">React</h3>
+                            <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
+                                <img src="./src/imgs/react.png" class="img-fluid ">
+                                <p class="p-3 text-light ">React (also known as React.js or ReactJS) is a free and
+                                    open-source
+                                    front-end JavaScript library for building user interfaces based on components.</p>
+
+                            </div>
+
                         </div>
                     </div>
-    
-                    <div class="carousel-item">
-                        <div class="content text-bg-light">
+
+                    <div class="carousel-item ">
+                        <div class="content row justify-content-center text-center">
                             <h3 class="p-3">JavaScript</h3>
-                            <img src="./src/imgs/js.png" class="img-fluid w-25">
-                            <p class="p-3">JavaScript (JS) is a lightweight interpreted (or just-in-time compiled) programming language with first-class functions.</p>
+                            <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
+                                <img src="./src/imgs/js.png" class="img-fluid ">
+                                <p class="p-3 text-light">JavaScript (JS) is a lightweight interpreted (or just-in-time
+                                    compiled)
+                                    programming language with first-class functions.</p>
+
+                            </div>
                         </div>
                     </div>
-    
+
                     <div class="carousel-item">
-                        <div class="content text-bg-light">
-                            <h3 class="p-3">Bootstrap</h3>
-                            <img src="./src/imgs/bootstrap.png" class="img-fluid w-25">
-                            <p class="p-3">Bootstrap is a popular front-end framework for web development, maintained by Twitter. It offers pre-styled components, a responsive grid, and JavaScript plugins to create modern and responsive interfaces with ease.</p>
+                        <div class="content row justify-content-center text-center">
+                            <h3 class="p-3  ">Bootstrap</h3>
+                            <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
+
+                                <img src="./src/imgs/bootstrap.png" class="img-fluid">
+                                <p class="p-3 text-light">Bootstrap is a popular front-end framework for web
+                                    development, maintained by
+                                    Twitter. It offers pre-styled components, a responsive grid, and JavaScript plugins
+                                    to
+                                    create modern and responsive interfaces with ease.</p>
+
+                            </div>
                         </div>
                     </div>
-    
+
                     <div class="carousel-item">
-                        <div class="content text-bg-light ">
-                            <h3 class="p-3">SASS</h3>
-                            <img src="./src/imgs/sass.png" class="img-fluid w-25">
-                            <p class="p-3">SASS is a CSS extension language, and the acronym stands for "Syntactically Awesome Style Sheets," literally translated as style sheets with an incredible syntax. Its concept is to add special features like variables, mixins, functions, operations, and other diverse options.</p>
+                        <div class="content row justify-content-center text-center">
+                            <h3 class="p-3 ">SASS</h3>
+                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                                <img src="./src/imgs/sass.png" class="img-fluid w-25">
+                                <p class="p-3 text-light">SASS is a CSS extension language, and the acronym stands for
+                                    "Syntactically
+                                    Awesome Style Sheets," literally translated as style sheets with an incredible
+                                    syntax.
+                                    Its concept is to add special features like variables, mixins, functions,
+                                    operations,
+                                    and other diverse options.</p>
+
+                            </div>
                         </div>
                     </div>
                 </div>
 
-                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main" data-bs-slide="prev"  >
+                <button class="carousel-control-prev " type="button" data-bs-target="#carousel-main"
+                    data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main" data-bs-slide="next"  >
+                <button class="carousel-control-next" type="button" data-bs-target="#carousel-main"
+                    data-bs-slide="next">
                     <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
-               
+
 
             </div>
         </section>
@@ -133,37 +181,63 @@
                     <a href="https://github.com/Evertonneto/Game_Mata_Mosquito-Udemy" class="link" target="
                     ">Click here</a>
                 </div>
-                <div id="project-2"
-                class="projects-cards-item">
-                    <h3 class="title" >Calculator in Js</h3>
-                    <a href="https://evertonneto.github.io/Calculadora_Javascript/" class="link" target="_blank">Click here</a>
+                <div id="project-2" class="projects-cards-item">
+                    <h3 class="title">Calculator in Js</h3>
+                    <a href="https://evertonneto.github.io/Calculadora_Javascript/" class="link" target="_blank">Click
+                        here</a>
                 </div>
-                <div id="project-3"
-                class="projects-cards-item">
+                <div id="project-3" class="projects-cards-item">
                     <h3 class="title">Clone Spotify</h3>
                     <a href="https://github.com/Evertonneto/Clone_Spotify" class="link" target="_blank
                     ">Click here</a>
                 </div>
-                <div id="project-4"
-                class="projects-cards-item">
+                <div id="project-4" class="projects-cards-item">
                     <h3 class="title">Card API with Fetch</h3>
                     <a href="https://github.com/Evertonneto/Cards-Api-Project" class="link" target="_bla
                     ">Click here</a>
                 </div>
             </div>
-            
+
         </section>
 
         <section class="contact">
             <h2 id="contact">Contact Me</h2>
+            <form id="contactForm">
+                <div class="form-group">
+                    <label for="name">NAME</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-MAIL</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">MESSAGE</label>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" 
+                        required></textarea>
+                </div>
+                <button type="submit" id="sendButton">Send</button>
+            </form>
+            <div id="responseMessage"></div>
         </section>
 
     </main>
-    <footer><span>Everton Nunes Ramalho Neto</span> &copy</footer>
+    <footer style="font-size: xx-large;"><span>Everton Nunes Ramalho Neto</span> &copy</footer>
 
 
     <!-- SCRIPT BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"></script>
+
+    <script src="./src/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("m40o4vd5qnUwDECp1"); // Substitua pela Public Key do EmailJS
+        })();
+    </script>
 
 </body>
+
 </html>
