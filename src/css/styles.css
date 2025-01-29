@@ -55,16 +55,12 @@ a {
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  padding: 0px;
 }
 @media (max-width: 1024px) {
   .header-navbar {
     flex-direction: column;
     gap: 4rem;
   }
-}
-.header-navbar li {
-  width: 100%;
 }
 @media (max-width: 1024px) {
   .header-navbar li {
@@ -208,6 +204,7 @@ a {
 .main .skills .content h3 {
   font-size: 4rem;
   color: #fff;
+  margin-bottom: 0rem;
 }
 .main .skills .content img {
   width: 30%;
@@ -285,7 +282,7 @@ a {
   }
 }
 .main .projects-cards-item .title {
-  font-size: 1.5rem;
+  font-size: 3rem;
   font-weight: 700;
   margin-bottom: 10px;
   font-family: "Space Grotesk", sans-serif;
@@ -296,6 +293,7 @@ a {
   display: inline;
   transition: 0.8s;
   padding: 5px;
+  font-size: 2rem;
   text-transform: uppercase;
   background-color: #fff;
 }
@@ -383,10 +381,11 @@ a {
   flex-direction: column;
 }
 .main .contact form .form-group label {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 5px;
   color: #555;
+  text-align: start;
 }
 .main .contact form .form-group input, .main .contact form .form-group textarea {
   border: 1px solid #ddd;

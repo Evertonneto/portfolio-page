@@ -94,12 +94,12 @@
 
         <section class="skills container">
             <h2 id="skills">My Skills</h2>
-            <div class="carousel slide m-5" id="carousel-main">
+            <div class="carousel slide m-5" id="carousel-main" data-bs-ride="carousel" data-bs-interval="5000">
                 <div class="carousel-inner text-bg rounded-4">
 
                     <div class="carousel-item active ">
-                        <div class="content row justify-content-center text-center">
-                            <h3 class="p-3 ">React</h3>
+                        <div class="content row justify-content-center align-items-center text-center">
+                            <h3>React</h3>
                             <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
                                 <img src="./src/imgs/react.png" class="img-fluid ">
                                 <p class="p-3 text-light ">React (also known as React.js or ReactJS) is a free and
@@ -111,9 +111,24 @@
                         </div>
                     </div>
 
+                    <div class="carousel-item">
+                        <div class="content row justify-content-center align-items-center text-center">
+                            <h3>React Native</h3>
+                            <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
+                                <img src="./src/imgs/react.png" class="img-fluid w-25">
+                                <p class="p-3 text-light">
+                                    React Native is an open-source framework developed by Facebook (now Meta) that
+                                    allows you to build mobile applications for iOS and Android using JavaScript and
+                                    React. It leverages native components to deliver performance close to fully native
+                                    apps while maintaining the development flexibility of React.</p>
+
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="carousel-item ">
-                        <div class="content row justify-content-center text-center">
-                            <h3 class="p-3">JavaScript</h3>
+                        <div class="content row justify-content-center align-items-center text-center">
+                            <h3>JavaScript</h3>
                             <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
                                 <img src="./src/imgs/js.png" class="img-fluid ">
                                 <p class="p-3 text-light">JavaScript (JS) is a lightweight interpreted (or just-in-time
@@ -125,8 +140,8 @@
                     </div>
 
                     <div class="carousel-item">
-                        <div class="content row justify-content-center text-center">
-                            <h3 class="p-3  ">Bootstrap</h3>
+                        <div class="content row justify-content-center align-items-center text-center">
+                            <h3>Bootstrap</h3>
                             <div class="d-flex flex-column flex-lg-row  justify-content-center align-items-center">
 
                                 <img src="./src/imgs/bootstrap.png" class="img-fluid">
@@ -140,9 +155,10 @@
                         </div>
                     </div>
 
+
                     <div class="carousel-item">
-                        <div class="content row justify-content-center text-center">
-                            <h3 class="p-3 ">SASS</h3>
+                        <div class="content row justify-content-center align-items-center text-center">
+                            <h3>SASS</h3>
                             <div class="d-flex flex-column flex-lg-row justify-content-center align-items-center">
                                 <img src="./src/imgs/sass.png" class="img-fluid w-25">
                                 <p class="p-3 text-light">SASS is a CSS extension language, and the acronym stands for
@@ -158,14 +174,14 @@
                     </div>
                 </div>
 
-                <button class="carousel-control-prev " type="button" data-bs-target="#carousel-main"
+                <button class="carousel-control-prev" type="button" data-bs-target="#carousel-main"
                     data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon bg-black" aria-hidden="true"></span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
                 <button class="carousel-control-next" type="button" data-bs-target="#carousel-main"
                     data-bs-slide="next">
-                    <span class="carousel-control-next-icon bg-black" aria-hidden="true"></span>
+                    <span class="carousel-control-next-icon " aria-hidden="true"></span>
                     <span class="visually-hidden">Next</span>
                 </button>
 
@@ -213,8 +229,7 @@
                 </div>
                 <div class="form-group">
                     <label for="message">MESSAGE</label>
-                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" 
-                        required></textarea>
+                    <textarea id="message" name="message" placeholder="Enter your message" rows="5" required></textarea>
                 </div>
                 <button type="submit" id="sendButton">Send</button>
             </form>
@@ -236,6 +251,8 @@
         (function () {
             emailjs.init("m40o4vd5qnUwDECp1"); // Substitua pela Public Key do EmailJS
         })();
+
+
     </script>
 
 </body>
