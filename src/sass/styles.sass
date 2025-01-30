@@ -36,7 +36,6 @@ a
         flex-direction: column
         gap: 5rem
 
-
     &-brand
         font-family: 'Space Grotesk', sans-serif
         font-size: 3.4rem
@@ -53,14 +52,13 @@ a
             flex-direction: column
             gap: 4rem
 
-
+        padding-left: 0rem
         gap: 2rem
 
         li
-            
+
             @include mixins.tablet
                 margin-left: 0px
-               
 
         a
             transition: .8s
@@ -72,7 +70,6 @@ a
             &:hover
                 background-color: #fff
                 color: #000
-
 
     &-social-media
         @include mixins.flex-center
@@ -157,6 +154,11 @@ a
         text-align: center
         margin-top: 2rem
 
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon
+            width: 5rem
+            height: 5rem
+
         h2
             font-size: 4rem
             padding: 10px
@@ -178,11 +180,11 @@ a
             h3
                 font-size: 4rem
                 color: #fff
-                margin-bottom: 0rem 
+                margin-bottom: 0rem
 
             img
                 width: 30%
-
+                margin-top: 2rem
                 @include mixins.mobile
                     width: 70%
 
@@ -327,4 +329,3 @@ a
             color: variables.$text-color-primary
             font-weight: bold
             font-size: 2rem
-            
